@@ -4,73 +4,74 @@
 ![TIC-80](https://tic.computer/img/logo64.png)
 **TIC-80 TINY COMPUTER** - [https://tic.computer/](https://tic.computer/)
 
-# About
-TIC-80 is a **FREE** and **OPEN SOURCE** fantasy computer for making, playing and sharing tiny games.
+# Sobre
+TIC-80 é um fantasy computer **GRATUITO** e **OPEN SOURCE** para criar, jogar e compartilhar pequenos jogos.
 
-With TIC-80 you get built-in tools for development: code, sprites, maps, sound editors and the command line, which is enough to create a mini retro game.
+Com TIC-80 você recebe ferramentas integradas para o desenvolvimento: código, sprites, mapas, editores de som e um terminal de linha de comando, o que é suficiente para criar um mini jogo retrô.
 
-Games are packaged into a cartridge file, which can be easily distributed. TIC-80 works on all popular platforms. This means your cartridge can be played in any device.
+Os jogos são empacotados em um arquivo de cartucho (cartridge files), os quais podem ser distribuídos facilmente. TIC-80 funciona em todas nas mais populares plataformas. Isso significa que seu cartucho pode ser jogado em qualquer dispositivo.
 
-To make a retro styled game, the whole process of creation and execution takes place under some technical limitations: 240x136 pixel display, 16 color palette, 256 8x8 color sprites, 4 channel sound, etc.
+Para desenvolver um jogo no estilo retrô, todo o processo de crição e execução existem sob um série de limitações técnicas: display de 240x136 pixel, paleta de 16 cores, 256 sprites coloridos de 8x8 pixel, 4 canais de som, etc.
 
 ![TIC-80](https://user-images.githubusercontent.com/1101448/29687467-3ddc432e-8925-11e7-8156-5cec3700cc04.gif)
 
-### Features
-- Multiple programming languages: [Lua](https://www.lua.org),
+### Funcionalidades
+- Suporte a múltiplas linguagens de programação: [Lua](https://www.lua.org),
   [Moonscript](https://moonscript.org),
   [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript),
   [Wren](http://wren.io/), and [Fennel](https://fennel-lang.org).
-- Games can have mouse and keyboard as input
-- Games can have up to 4 controllers as input (with up to 8 buttons, each)
-- Built-in editors: for code, sprites, world maps, sound effects and music
-- An aditional memory bank: load different assets from your cartridge while your game is executing
+- Os jogos podem ter suporte a mouse e teclado
+- Os jogos podem ter até 4 controles como entrada (com até 8 botões, cada)
+- Editores integrados: para codificar, sprites, mapas dos mundos, efeitos sonoros e música
+- Um banco de memória adicional: carregar assets diferentes do seu cartucho enquanto o jogo está sendo executado
 
-# Binary Downloads
-You can download compiled versions for the major operating systems directly from our [releases page](https://github.com/nesbox/TIC-80/releases).
+# Downloads dos Binários
+Você pode baixar uma versão compilada para a os maiores sistemas operacionais diretamente na nossa [página de releases](https://github.com/nesbox/TIC-80/releases).
 
-# Pro Version
-To help support TIC-80 development, we have a [PRO Version](https://nesbox.itch.io/tic).
-This version has a few additional features and binaries can only be downloaded on [our Itch.io page](https://nesbox.itch.io/tic).
+# Versão pro
+Para ajudar no desenvolvimento do TIC-80, existe uma [Versão PRO](https://nesbox.itch.io/tic).
+Esta versão possui algumas funcionalidades adicionais e os binários podem ser baixados exclusivamente em [nossa página do Itch.io](https://nesbox.itch.io/tic).
 
-For users who can't spend the money, we made it easy to build the pro version from the source code.
+Para os usuários que não podem gastar o dinheiro, nós tornamos simples o processo de compilar a Versão Pro a partir do código fonte.
 
-### Pro features
+### Funcionalidades da versão Pro
 
-- Save/load cartridges in text format, and create your game in any editor you want, also useful for version control systems.
-- Even more memory banks: instead of having only 1 memory bank you have 8.
-- Export your game without editors, and then publish it to app stores (WIP).
+- Salvar/Carregar cartuchos em formato de texto, e criar o jogo em qualquer editor que você desejar, muito útil para controlar a versão utilizando respositórios, como o GitHub.
+- Ainda mais bancos de memória: ao invés de ter apenas 1 banco de memória, você tem 8.
+- Exporte seu jogo sem os editores, e então publique-os nas lojas de aplicativos (WIP).
 
-# Community
-You can play and share games, tools and music at [tic.computer](https://tic.computer/play).
+# Comunidade
+Você pode jogar e compartilhar jogos, ferramentas e músicas em [tic.computer](https://tic.computer/play).
 
-The community also hangs out and discusses on [Discord chat](https://discord.gg/DkD73dP).
+A comunidade também discute diversos assuntos no [Chat do Discord](https://discord.gg/DkD73dP).
 
-# Contributing
-You are can contribute by issuing a bug or requesting a new feature on our [issues page](https://github.com/nesbox/tic.computer/issues).
-Keep in mind when engaging on a discussion to follow our [Code of Conduct](https://github.com/nesbox/TIC-80/blob/master/CODE_OF_CONDUCT.md).
+# Contribuindo
+Você pode controbuir enviando um bug ou requisitando uma nova funcionalidade
+ em nossa [página de requisções/bugs](https://github.com/nesbox/tic.computer/issues).
+Tenha em mente que você deve seguir o [Código de Conduta](https://github.com/nesbox/TIC-80/blob/master/CODE_OF_CONDUCT.md) sempre que se envolver em discussões do projeto.
 
-You can also contribute by reviewing or improving our [wiki](https://github.com/nesbox/tic.computer/wiki).
-The [wiki](https://github.com/nesbox/tic.computer/wiki) holds TIC-80 documentation, code snippets and game development tutorials.
+Você também pode contribuir revisando e melhorando o conteúdo de nossa [wiki](https://github.com/nesbox/tic.computer/wiki).
+A [wiki](https://github.com/nesbox/tic.computer/wiki) aramazena a documentação do TIC-80, exemplos de código e tutoriais de desenvolvimento de jogos.
 
-# Build instructions
+# Instruções para compilação
 
 ## Windows
-### with Visual Studio 2017
-- install `Visual Studio 2017`
-- install `git`
-- run following commands in `cmd`
+### com Visual Studio 2017
+- instalar `Visual Studio 2017`
+- instalar `git`
+- execute os comandos a seguir no `cmd`
 ```
 git clone --recursive https://github.com/nesbox/TIC-80 && cd TIC-80/build
 cmake -G "Visual Studio 15 2017 Win64" ..
 ```
-- open `TIC-80.sln` and build
-- enjoy :)
+- abra `TIC-80.sln` e compile
+- aproveite :)
 
-### with MinGW
-- install `mingw-w64` (http://mingw-w64.org) and add `.../mingw/bin` path to the *System Variables Path*
-- install `git`
-- install `cmake` (https://cmake.org)
-- run following commands in `terminal`
+### com MinGW
+- instalar `mingw-w64` (http://mingw-w64.org) e adicione o caminho `.../mingw/bin` na *variavel de ambiente PATH*
+- instalar `git`
+- instalar `cmake` (https://cmake.org)
+- execute os comandos a seguir no `terminal`
 ```
 git clone --recursive https://github.com/nesbox/TIC-80 && cd TIC-80/build
 cmake -G "MinGW Makefiles" ..
@@ -79,7 +80,7 @@ mingw32-make -j4
 
 ## Linux 
 ### Ubuntu 14.04
-run the following commands in the Terminal
+execute os comandos a seguir no terminal
 ```
 sudo apt-get install git cmake libgtk-3-dev libgles1-mesa-dev libglu-dev -y
 git clone --recursive https://github.com/nesbox/TIC-80 && cd TIC-80/build
@@ -87,7 +88,7 @@ cmake ..
 make -j4
 ```
 
-to install the latest CMake:
+para instalar a última versão do CMake:
 ```
 wget "https://cmake.org/files/v3.12/cmake-3.12.0-Linux-x86_64.sh"
 sudo sh cmake-3.12.0-Linux-x86_64.sh --skip-license --prefix=/usr
@@ -95,7 +96,7 @@ sudo sh cmake-3.12.0-Linux-x86_64.sh --skip-license --prefix=/usr
 
 ### Ubuntu 18.04
 
-run the following commands in the Terminal
+execute os comandos a seguir no terminal
 ```
 sudo apt-get install git cmake libgtk-3-dev libglvnd-dev libglu1-mesa-dev freeglut3-dev -y
 git clone --recursive https://github.com/nesbox/TIC-80 && cd TIC-80/build
@@ -104,9 +105,9 @@ make -j4
 ```
 
 ## Mac
-install `Command Line Tools for Xcode` and `brew` package manager
+instale `Command Line Tools for Xcode` e o gerenciador de pacotes `brew`
 
-run the following commands in the Terminal
+execute os comandos a seguir no terminal
 ```
 brew install git cmake
 git clone --recursive https://github.com/nesbox/TIC-80 && cd TIC-80/build
@@ -115,6 +116,6 @@ make -j4
 ```
 
 ## iOS / tvOS
-You can find iOS/tvOS version here 
+Você encontra versões para iOS/tvOS aqui 
 - 0.60.3: https://github.com/brunophilipe/TIC-80
 - 0.45.0: https://github.com/CliffsDover/TIC-80
