@@ -11,7 +11,7 @@ Com TIC-80 você recebe ferramentas integradas para o desenvolvimento: código, 
 
 Os jogos são empacotados em um arquivo de cartucho (cartridge files), os quais podem ser distribuídos facilmente. TIC-80 funciona em todas nas mais populares plataformas. Isso significa que seu cartucho pode ser jogado em qualquer dispositivo.
 
-Para desenvolver um jogo no estilo retrô, todo o processo de crição e execução existem sob um série de limitações técnicas: display de 240x136 pixel, paleta de 16 cores, 256 sprites coloridos de 8x8 pixel, 4 canais de som, etc.
+Para desenvolver um jogo no estilo retrô, todo o processo de criação e execução existem sob uma série de limitações técnicas: display de 240x136 pixel, paleta de 16 cores, 256 sprites coloridos de 8x8 pixel, 4 canais de som, etc.
 
 ![TIC-80](https://user-images.githubusercontent.com/1101448/29687467-3ddc432e-8925-11e7-8156-5cec3700cc04.gif)
 
